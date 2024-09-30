@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintaxe Geral do JS</title>
+</head>
+<body>
+
+    <h1>Começando com JavaScript</h1>
+
+    <hr>
+
+    <script>
+        // CTRL ; (comentario de linha unica)
+        /* shift alt a (comentrario de multiplas linhas)*/
+
+        // comendo de saida (util para testes basicos)
+        console.log("HELLO WORD!");
+
+
+        /*
+         manipulação de dados na memoria:
+        criação de espaços na memoria ram do computador atraves de variaveis e ou constantes.
+        variaveis: declaradas com a palavra-chave let.
+        constante: declaradas com a palavra const.
+
+        */ 
+
+        // declaração
+
+        let ano = 2024;
+        const aluno= "Marcio";
+
+        // saida
+
+        console.log(ano);
+        console.log( aluno);
+
+        //declarando uma relação de variaveis:
+        //elas inicião sem o valor atribuido ,portanto, são consideradas indefinidas (undefined)
+
+        let teste1, teste2, teste3;
+        console.log(teste1);
+
+        // atribuindo valores as variaveis
+
+        teste1 = "exemplo 1"
+
+        console.log(teste1);
+
+        //trabalhando com valores numericos
+
+        let valor1 = 10;
+        let valor2 = 5;
+        let valor3 = 1200.55;
+
+        //operações basicas
+
+        let soma = valor1 + valor2;
+        let subtracao = valor1-valor2;
+        let multiplicacao = valor1 * valor2;
+        let divisao = valor1/valor2 
+
+        //exemplo de uso de funcao matematica
+        let resultado = Math.sqrt (soma);
+        console.log(resultado);
+        
+
+        console.log(soma); //soma:15
+        console.log(subtracao); //subtração:5
+        console.log(multiplicacao); //multiplicação:50
+        console.log(divisao); //divisao:2
+        
+        
+        //saida de dados personalizada
+        //exemplo:
+        //Olá! Me chamo Marcio e não vejo a hora de acabar 2024
+
+        //forma 1: concatenação (tradicional, antiga)
+
+        console.log("Olá! Me chamo " + aluno+ " e não vejo a hora de acabar o ano de " + ano +"." );
+
+        console.log("Soma: "+soma);
+        console.log("Subtração: "+subtracao);
+        console.log("Multiplicação: "+multiplicacao);
+        console.log("Divisão: "+divisao);
+        
+            
+        
+
+        //forma 2: template literal/string (moderna)
+
+        console.log(`Olá me chamo ${aluno} e não vejo a hora o de acabar o ano de ${ano}.`);
+        
+        
+        
+        
+
+
+    </script>
+    
+</body>
+</html>
