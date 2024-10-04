@@ -59,3 +59,5 @@ const aluno ={
 }
 
 console.log(`${aluno.nomeCompleto}, com celular ${aluno.telefones [1]}, reside na ${aluno.endereco.bairro}. `);
+
+
