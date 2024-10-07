@@ -84,15 +84,18 @@ for (const prop in pessoa) {
 
 const clientes = [
     {
-        identificador:1,
-        cliente : "Goku",
+       nome : "Goku",
+        identificador:1
+        
        
     },
-    {   identificador:2,
-        cliente: "naruto",
+    {  nome: "naruto", 
+        identificador:2
+        
     },
-    { identificador:3,
-      cliente: "shiryu"
+    { nome: "shiryu",
+        identificador:3
+      
     }
 ];
 
@@ -101,8 +104,14 @@ const clientes = [
 cliente :naruto , id 2
 cliente : shiryu , id 3
 */
-for(const cliente of clientes){
-    console.log(cliente);
+
+
+
+for(const cliente of clientes) {
+    
+    console.log(`- cliente: ${cliente.nome}, id: ${cliente.identificador}`);
+    
+  
     
 }
 
